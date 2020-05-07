@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+
+        <title>Ozzle Speakers | Our Products</title>
+     <style>
+        
+        h1 {
+            color: rgb(31,117,254);
+            font-family:calibri;
+            font-size: 42px;
+            text-align:center;
+        }  
+
+        h2 {
+            color: rgb(2,71,254);
+            font-family:calibri;
+        }  
+        h3 {
+            color: rgb(0,17,254);
+            font-family:calibri;
+        }
+        h4 {
+            color: rgb(93,173,236);
+            font-family:calibri;
+        }
+        h8 {
+            color: rgb(0,48,143);
+            font-family:calibri;
+        }
+        body {
+              background-color: lightblue
+        }
+        p {
+           color: blue;
+           font-family:calibri
+        }
+        a {
+           color: darkblue;
+           font-family:calibri;
+           text-decoration:none;
+        }
+        #container {
+                    width: 550px;
+                    margin: auto;
+                    border: 1px solid rgb(0, 0, 0);
+                    border-top: 10px solid blue;
+                    padding: 15px;
+        }
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #0000ff;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #33ccff;
+  color: white;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #3333ff;
+  background-color: #3333ff;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #3399ff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #99ccff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 0px solid #99ccff;
+  border-top: none;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+                    
+        </style>
+    </head>
+    <body>
+<div id="container">
+<div class="topnav">
+  <a href="ozzle homepage.html">Home</a>
+  <a href="ozzlecontacts.html">Contact</a>
+  <a class="active" href="ozzlebuy.html">Products</a> 
+  <a href="loginportal.html">Admin Portal</a>
+  <a href="signup.html">Sign Up</a>
+</div>
+<h1>Our Speakers</h1>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">BoomBox</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Kiddo</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Oz 300</button>
+</div>
+
+<div id="London" class="tabcontent">
+<div class="card">
+  <h1>BoomBox</h1>
+  <p class="price">£50.99</p>
+  <p>Our flagship speaker, the BoomBox</p>
+  <a href="ozzleproducts.html"><p><button>Buy</button></p></a>
+</div>
+</div>
+
+<div id="Paris" class="tabcontent">
+<div class="card">
+  <h1>Kiddo</h1>
+  <p class="price">£45.64</p>
+  <p>The Kiddo, a mini, light-weight speaker designed exclusively for children</p>
+  <a href="ozzleproducts.html"><p><button>Buy</button></p></a>
+</div>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+ <div class="card">
+  <h1>Oz 300</h1>
+  <p class="price">£120.50</p>
+  <p> The Oz 300, our most advanced speaker yet </p>
+  <a href="ozzleproducts.html"><p><button>Buy</button></p></a>
+</div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<br>
+  
+
+    
+    <h8>© Leo Wilkin 2020</h8>
+    <a href="mailto:leo.wilkin10@gmail.com">webmaster@ozzlespeakers.com</a>    
+   <div> 
+</body>
+</html>
